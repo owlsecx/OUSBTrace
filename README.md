@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-Parse Windows registry hives for complete USB history ║
+
+OUSBTrace is a USB device forensics and monitoring tool that enumerates connected USB devices and tracks connection and disconnection events over time. It reads device identifiers, vendor/product data and timestamps to build an audit trail. It runs as a desktop application for authorized endpoint-forensics work.
 
 ---
 
 ## ✨ Features
 
-- Offline Windows USBSTOR/MountedDevices hive history, anomaly detection and risk timeline (distinct from ORisk live USB Guardian)
+
+- Enumeration of connected USB devices with vendor/product identifiers
+- Real-time tracking of connect and disconnect events
+- Timestamped audit trail of device history
+- Device metadata inspection (serial, class, mount points where available)
+- Export of the device log for forensic reporting
+- Desktop UI in the OWLSec theme with an offline --self-test
 
 ---
 
@@ -37,8 +44,11 @@ Parse Windows registry hives for complete USB history ║
 
 ## 🚀 Usage
 
+
 ```bash
 ./OUSBTrace
+./OUSBTrace --self-test
+./OUSBTrace --help
 ```
 
 ---
